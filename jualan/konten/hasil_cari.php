@@ -1,7 +1,10 @@
 <div class="row">
   <div class="container">
   <?php 
-    $sql_barang = "SELECT * FROM produk";
+    $barang_cari = $_POST[barang_cari];
+    echo "<p> Menampilkan hasil cari dari <strong>$barang_cari</strong></p> ";
+
+    $sql_barang = "SELECT * FROM produk WHERE nama_produk LIKE '%$barang_cari%'";
     $exe_sql    = mysql_query($sql_barang);
     while($barang=mysql_fetch_array($exe_sql))
     {
@@ -14,6 +17,6 @@
     </div>
   <?php 
     } // Tutup while
-  ?>   
+  ?>  
   </div>
 </div>
