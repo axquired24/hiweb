@@ -27,8 +27,7 @@
       <div class="col-md-4">
         <?php
           error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
-          include "koneksi.php";
-          include "../AES/function.php";
+          include "koneksi.php";      
           $list_barang  = "ur=konten/list_barang";
           $daftar_harga = "ur=konten/daftar_harga";
           $detail_barang = "ur=konten/detail_barang";
