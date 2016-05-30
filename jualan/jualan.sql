@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 30, 2016 at 08:16 AM
+-- Generation Time: May 30, 2016 at 10:34 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.5.27
 
@@ -29,14 +29,21 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `all_kategori` (
   `id_kategori` int(5) NOT NULL,
   `nama_kategori` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `all_kategori`
 --
 
 INSERT INTO `all_kategori` (`id_kategori`, `nama_kategori`) VALUES
-(1, 'Baju Batik Solo');
+(1, 'Baju Batik Solo'),
+(2, 'Batik Lampung '),
+(3, 'Batik Asam Manis'),
+(4, 'Batik Aceh'),
+(5, 'Batik FKIP'),
+(6, 'Batik Polosan'),
+(7, 'Batik Aksara Lampung'),
+(8, 'Batik Mahalan - Branded');
 
 -- --------------------------------------------------------
 
@@ -86,7 +93,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `all_kategori`
 --
 ALTER TABLE `all_kategori`
-  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `produk`
 --

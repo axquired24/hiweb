@@ -31,6 +31,7 @@
           $list_barang  = "ur=konten/list_barang";
           $daftar_harga = "ur=konten/daftar_harga";
           $detail_barang = "ur=konten/detail_barang";
+          $manajemen_produk = "ur=manajemen_store/manajemen_produk";
           include "navmenu.php";
          // Buat Menu 
         ?>      

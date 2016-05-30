@@ -22,7 +22,7 @@
 					<td><?php echo $produk[harga_produk]; ?></td>
 					<td><?php echo $produk[nama_kategori]; ?></td>
 					<td><?php echo $produk[gambar_produk]; ?></td>
-					<td>Edit - Hapus</td>
+					<td><a href="./?ur=manajemen_store/edit_produk&idproduk=<?php echo $produk[id_produk]; ?>">Edit</a> - <a href="#">Hapus</a></td>
 				</tr>
 			<?php }; // Tutupnya While
 			?>
